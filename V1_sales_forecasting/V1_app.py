@@ -13,7 +13,7 @@ st.set_page_config(layout="wide", page_title="E-commerce Sales Analysis")
 def load_and_preprocess_data():
     """Loads and preprocesses the sales data."""
     try:
-        df = pd.read_csv('Sample - Superstore.csv', encoding='latin1')
+        df = pd.read_csv('V1_sales_forecasting/Sample - Superstore.csv', encoding='latin1')
     except FileNotFoundError:
         st.error("Error: 'Sample - Superstore.csv' not found. Please make sure the file is in the same directory.")
         return None
@@ -136,4 +136,5 @@ with col2:
     
 st.markdown("---")
 st.markdown("### Project Notes")
+
 st.info("This is Version 1 of the project, using a single-series dataset. The next steps involve migrating to a larger, multi-series dataset (V2) to showcase scalable forecasting and proper model validation techniques.")
