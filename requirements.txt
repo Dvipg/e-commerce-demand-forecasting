@@ -6,3 +6,4 @@ prophet>=1.1.0
 tqdm>=4.65.0
 cmdstanpy>=1.1.0
 statsmodels
+pyod
