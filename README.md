@@ -14,7 +14,7 @@ The app supports:
 
 This project is a testament to an iterative build process. Instead of a single, static solution, it evolved from a simple V1 to a robust, scalable V2. It’s a showcase of **problem-solving, persistence, and continuous improvement**.
 
-### V1: The Foundational Build
+### V1_sales_forecasting: The Foundational Build
 
   * **Focus:** Single-series forecasting on a small-scale dataset (`Sample - Superstore.csv`).
   * **Goal:** Prove the core concepts of forecasting (Prophet) and anomaly detection (STL + IsolationForest).
@@ -23,7 +23,7 @@ This project is a testament to an iterative build process. Instead of a single, 
       * Packaging a simple analysis into a Streamlit app.
       * The importance of a clean, reproducible code block.
 
-### V2: The Scalable Upgrade
+### V2_multi_series_forecasting: The Scalable Upgrade
 
   * **Focus:** Multi-series forecasting on a large-scale dataset (`Store Item Demand Forecasting Challenge`).
   * **Goal:** Elevate the V1 analysis to a production-ready standard.
@@ -39,17 +39,20 @@ This project is a testament to an iterative build process. Instead of a single, 
 ## 📂 Project Structure
 
 ```
-ecom-forecast-anomaly/
-├── README.md           # This project overview
-├──requirements.txt    # All Python dependencies
-│  
-├── V1/                 # The original, foundational project
-│   ├── app.py          
-│   └── notebooks/
+e-commerce-demand-forecasting/
 │
-└── V2/                 # The advanced, scalable project
-    ├── app.py          # The main Streamlit web app
-    └── data/           # The V2 dataset
+├── V1_sales_forecasting/            # The original, foundational project
+│   ├── Sample - Superstore.csv         # dataset 
+│   ├── V1_app.py                       # Streamlit app
+│   └── V1_sales_forecasting.ipynb      # notebook 
+│
+├── V2_multi_series_forecasting/      # The advanced, scalable project
+│   ├── train.csv                                 # dataset
+│   ├── V2_app.py                                 # The main Streamlit web app
+│   └── V2_multi_series_forecasting.ipynb         # notebook
+│
+├── README.md           # This project overview
+└── requirements.txt    # All Python dependencies
 
 
 ```
@@ -85,21 +88,26 @@ ecom-forecast-anomaly/
 ```bash
 # Clone the repository
  git clone[link:https://github.com/Dvipg/e-commerce-demand-forecasting.git]
- cd ecom-forecast-anomaly
+ cd e-commerce-demand-forecasting
 
 # Install all dependencies
 pip install -r requirements.txt
 
+# Run The V1 Streamlit app
+cd V1_sales_forecasting/
+streamlit run V1_app.py
+
 # Run the V2 Streamlit app
-cd V2
-streamlit run app.py
+cd V2_multi_series_forecasting/
+streamlit run V2_app.py
 ```
 
 -----
 
 ## 🌍 Deployment
 
-This project is deployable on **Streamlit Cloud** for free link: (App)[link: ]
+(V1_App)[https://e-commerce-demand-forecasting-hnzjcrks3pennmjtnbstxn.streamlit.app/]
+(V2_App)[https://e-commerce-demand-forecasting-qnpcqkidk7q2omffcfmpt7.streamlit.app/]
 -----
 
 ## 🏆 Key Takeaway
