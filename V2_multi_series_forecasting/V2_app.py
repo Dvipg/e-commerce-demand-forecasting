@@ -20,7 +20,7 @@ def load_and_forecast_data():
     """
     st.info("Please wait, loading data and training models for 500 time series. This will take a few minutes...")
     
-    file_path = 'train.csv'
+    file_path = 'V2_multi_series_forecasting/train.csv'
     try:
         df = pd.read_csv(file_path)
     except FileNotFoundError:
@@ -190,4 +190,5 @@ if df_data is not None and df_forecast is not None:
             
         st.dataframe(df_metrics[['horizon', 'rmse', 'mape', 'coverage']].head(10))
     else:
+
         st.info('Click the "Run Backtesting" button in the sidebar to generate and view the performance metrics.')
