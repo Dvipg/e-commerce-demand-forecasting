@@ -87,7 +87,7 @@ e-commerce-demand-forecasting/
 
 ```bash
 # Clone the repository
- git clone[link:https://github.com/Dvipg/e-commerce-demand-forecasting.git]
+ git clone[https://github.com/Dvipg/e-commerce-demand-forecasting.git]
  cd e-commerce-demand-forecasting
 
 # Install all dependencies
@@ -104,10 +104,10 @@ streamlit run V2_app.py
 
 -----
 
-## 🌍 Deployment
+## 🌍 Deployment 
 
-(V1_App)[https://e-commerce-demand-forecasting-hnzjcrks3pennmjtnbstxn.streamlit.app/]
-(V2_App)[https://e-commerce-demand-forecasting-qnpcqkidk7q2omffcfmpt7.streamlit.app/]
+* **V1 App:** [e-commerce-demand-forecasting V1](https://e-commerce-demand-forecasting-hnzjcrks3pennmjtnbstxn.streamlit.app/)
+* **V2 App:** [e-commerce-demand-forecasting V2](https://e-commerce-demand-forecasting-qnpcqkidk7q2omffcfmpt7.streamlit.app/)
 -----
 
 ## 🏆 Key Takeaway
